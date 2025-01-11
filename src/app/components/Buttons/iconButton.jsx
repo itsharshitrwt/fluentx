@@ -1,7 +1,7 @@
 import React from 'react'
 
 const IconButton = ({Icon, OnClick}) =>{
-    <span className='cirsor-pointer flex items-center space-x-2' onClick={onClick}>
+    <span className='cursor-pointer flex items-center space-x-2'>
       <Icon size={22}/>
     </span>
 }

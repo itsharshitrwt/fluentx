@@ -246,7 +246,7 @@ export default function Home() {
                           {copied && <span className="text-xs text-green-500">Copied!!</span>}
                           <IconThumbUp size={22} className="hover:text-neutral-500"/>
                           <IconThumbDown size={22} className="hover:text-neutral-500"/>
-                          <IconStar size={22} onClick={()=>{}} className = {favourite ? "text-orange-500":""}/>
+                          <IconStar size={22} onClick={handleFavourite} className = {favourite ? "text-orange-500":""}/>
                         </div>
                      </div>
                     </div>
