@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Groq from "groq-sdk"; 
 
 const groq = new Groq({
-  apiKey: process.env.GROQ_API_KEY, 
+  apiKey: process.env.NEXT_PUBLIC_GROQ_API_KEY || " ",  dangerouslyAllowBrowser: true
 });
 
 const useTranslate = (sourceText, selectedLanguage) => {
@@ -18,8 +18,8 @@ const useTranslate = (sourceText, selectedLanguage) => {
               role: "user",
               content: `You will be provided with a sentence. This sentence: 
               ${sourceText}. Your tasks are to:
-              - Detect what language the sentence is in
-              - Translate the sentence into ${selectedLanguage}
+              - start with the ${selectedLanguage} translation is and then convey the message.
+              - Translate the sentence into ${selectedLanguage}, make sure to reply only in the sleected language not in English all the time. you will only reply in the language that is selected.
               Do not return anything other than the translated sentence.`,
             },
           ],

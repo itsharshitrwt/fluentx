@@ -3,10 +3,10 @@ import React from "react";
 const SvgDecorations: React.FC = () => {
   return (
     <>
-      {/* First Decoration */}
+      
       <div className="hidden z-[200] md:block absolute top-0 end-0 -translate-y-12 translate-x-20">
         <svg
-          className="w-16 h-auto text-purple-600"
+          className="w-16 h-auto text-purple-500"
           width="121"
           height="135"
           viewBox="0 0 121 135"
@@ -34,7 +34,7 @@ const SvgDecorations: React.FC = () => {
         </svg>
       </div>
 
-      {/* 2nd Decoration */}
+      
       <div className="hidden md:block absolute bottom-0 start-0 translate-y-10 -translate-x-32">
         <svg
           className="w-40 h-auto text-yellow-500"
@@ -53,95 +53,45 @@ const SvgDecorations: React.FC = () => {
         </svg>
       </div>
 
-      {/* Third Decoration */}
-      <div className="hidden z-[200] md:block absolute top-10 start-10 translate-x-10">
+      
+      <div className="hidden md:block absolute top-0 start-0 translate-y-2 -translate-x-16">
         <svg
-          className="w-24 h-auto text-purple-600" //  purple color
+          className="w-24 h-auto text-blue-500" 
           width="150" 
           height="150" 
           viewBox="0 0 150 150" 
-          fill="none" 
-          xmlns="http://www.w3.org/2000/svg">
-          <circle cx="75" cy="75" r="70" stroke="currentColor" strokeWidth="10" />
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10,30 C40,10,60,40,90,20 C120,0,140,50,150,80" 
+            stroke="currentColor"
+            strokeWidth="8" 
+            strokeLinecap="round"
+          />
         </svg>
       </div>
 
-      {/* Fourth Decoration */}
-      <div className="hidden z-[200] md:block absolute bottom-20 end-20 translate-x-20">
+      
+      <div className="hidden md:block absolute bottom-0 end-0 translate-y-10 translate-x-32">
         <svg
-          className="w-32 h-auto text-yellow-500" //  yellow color
-          width="200" 
+          className="w-32 h-auto text-green-500" 
+          width="250" 
           height="100" 
-          viewBox="0 0 200 100" 
-          fill="none" 
-          xmlns="http://www.w3.org/2000/svg">
-          <rect width="200" height="100" rx="15" fill="#FFD700" />
-        </svg>
-      </div>
-
-      {/* Fifth Decoration */}
-      <div className="hidden z-[200] md:block absolute top-0 end-0 -translate-y-12 translate-x-20">
-        <svg
-          className="w-16 h-auto text-purple-600"
-          width="121"
-          height="135"
-          viewBox="0 0 121 135"
+          viewBox="0 0 250 100" 
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M5 16.4754C11.7688 27.4499 21.2452 57.3224 5 89.0164"
+            d="M5,50 C50,10,100,90,145,50 C190,10,250,90,245,50" 
             stroke="currentColor"
-            strokeWidth="10"
-            strokeLinecap="round"
-          />
-          <path
-            d="M33.6761 112.104C44.6984 98.1239 74.2618 57.6776 83.4821 5"
-            stroke="currentColor"
-            strokeWidth="10"
-            strokeLinecap="round"
-          />
-          <path
-            d="M50.5525 130C68.2064 127.495 110.731 117.541 116 78.0874"
-            stroke="currentColor"
-            strokeWidth="10"
-            strokeLinecap="round"
-          />
-        </svg>
-      </div>
-
-      {/* 6th Decoration */}
-      <div className="hidden z-[200] md:block absolute top-0 end-0 -translate-y-12 translate-x-20">
-        <svg
-          className="w-16 h-auto text-purple-600"
-          width="121"
-          height="135"
-          viewBox="0 0 121 135"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M5 16.4754C11.7688 27.4499 21.2452 57.3224 5 89.0164"
-            stroke="currentColor"
-            strokeWidth="10"
-            strokeLinecap="round"
-          />
-          <path
-            d="M33.6761 112.104C44.6984 98.1239 74.2618 57.6776 83.4821 5"
-            stroke="currentColor"
-            strokeWidth="10"
-            strokeLinecap="round"
-          />
-          <path
-            d="M50.5525 130C68.2064 127.495 110.731 117.541 116 78.0874"
-            stroke="currentColor"
-            strokeWidth="10"
+            strokeWidth="6" 
             strokeLinecap="round"
           />
         </svg>
       </div>
     </>
-   );
+  );
 };
 
 export default SvgDecorations;
